@@ -34,7 +34,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const page = await browser.newPage()
 
-  await page.setViewport({ width: width ?? 512, height: height ?? 512 })
+  await page.setViewport({ width: width ?? 300, height: height ?? 300 })
 
   await page.goto(getAbsoluteURL(`${rot ? `?rot=${rot}` : ""}`))
   // await page.goto(getAbsoluteURL(""))
