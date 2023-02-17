@@ -1,6 +1,7 @@
 {
     "functions": {
         "pages/api/*.ts": {
+            "maxDuration": 30,
             "excludeFiles": "{node_modules/**/*,.next/**/*,.vercel/**/*}"
         }
     }
